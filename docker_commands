@@ -17,14 +17,14 @@ docker logs -f techtrends
  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-192.168.10.137 - - [23/Jul/2022 01:43:53] "GET / HTTP/1.1" 200 -
-192.168.10.137 - - [23/Jul/2022 01:43:53] "GET /static/css/main.css HTTP/1.1" 304 -
-192.168.10.137 - - [23/Jul/2022 01:44:07] "GET /create HTTP/1.1" 200 -
-192.168.10.137 - - [23/Jul/2022 01:44:07] "GET /static/css/main.css HTTP/1.1" 304 -
-192.168.10.137 - - [23/Jul/2022 01:44:33] "POST /create HTTP/1.1" 302 -
-192.168.10.137 - - [23/Jul/2022 01:44:33] "GET / HTTP/1.1" 200 -
-192.168.10.137 - - [23/Jul/2022 01:44:34] "GET /static/css/main.css HTTP/1.1" 304 -
-192.168.10.137 - - [23/Jul/2022 01:51:29] "GET /7 HTTP/1.1" 200 -
-192.168.10.137 - - [23/Jul/2022 01:51:29] "GET /static/css/main.css HTTP/1.1" 304 -
+10.50.50.8 - - [23/Jul/2022 01:43:53] "GET / HTTP/1.1" 200 -
+10.50.50.8 - - [23/Jul/2022 01:43:53] "GET /static/css/main.css HTTP/1.1" 304 -
+10.50.50.8 - - [23/Jul/2022 01:44:07] "GET /create HTTP/1.1" 200 -
+10.50.50.8 - - [23/Jul/2022 01:44:07] "GET /static/css/main.css HTTP/1.1" 304 -
+10.50.50.8 - - [23/Jul/2022 01:44:33] "POST /create HTTP/1.1" 302 -
+10.50.50.8 - - [23/Jul/2022 01:44:33] "GET / HTTP/1.1" 200 -
+10.50.50.8 - - [23/Jul/2022 01:44:34] "GET /static/css/main.css HTTP/1.1" 304 -
+10.50.50.8 - - [23/Jul/2022 01:51:29] "GET /7 HTTP/1.1" 200 -
+10.50.50.8 - - [23/Jul/2022 01:51:29] "GET /static/css/main.css HTTP/1.1" 304 -
 
 
