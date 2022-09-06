@@ -25,7 +25,15 @@ replicaCount: 1
 containerPort: 3111
 
 livenessProbe:
-  path: /healthz
+  httpGet:
+    path: /healthz
+    port: 3111
+  initialDelaySeconds: 5
+  periodSeconds: 5
 
 readinessProbe:
-  path: /healthz
+  httpGet:
+    path: /healthz
+    port: 3111
+  initialDelaySeconds: 5
+  periodSeconds: 5
