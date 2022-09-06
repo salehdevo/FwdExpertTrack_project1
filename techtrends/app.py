@@ -112,7 +112,15 @@ def metrics():
 
 # start the application on port 3111
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port='3111')
-   logging.basicConfig(filename='app.log',level=logging.DEBUG)
-
-
+    logging.basicConfig(level = logging.DEBUG,
+                        format='%(asctime)s : %(name)s : %(levelname)-8s %(message)s',
+                        datefmt='%Y-%m-%d %H:%M:%S')
+    
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stdout_handler.setLevel(logging.DEBUG)
+    stderr_handler = logging.StreamHandler(sys.stderr)
+    stderr_handler.setLevel(logging.ERROR)
+    dual_handlers = [stdout_handler, stderr_handler]
+    metrics_dict = {'db_connection_count' : 0,
+                    'posts_count' : None}
+    app.run(host='0.0.0.0', port='3111')
